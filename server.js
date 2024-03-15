@@ -30,6 +30,8 @@ db.mongoose
     process.exit();
   });
 
+  require("./app/routes/tutorial.routes")(app);
+
 // simple route
 app.get("/", (req, res) => {
   res.json({ message: "Welcome to bezkoder application." });
